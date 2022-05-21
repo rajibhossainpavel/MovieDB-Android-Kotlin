@@ -1,11 +1,11 @@
 package com.mdb.MovieDB.Model.Entity
 
-class Movie {
+data class Movie(
     val poster_path: String?,
     val adult: Boolean,
     val overview: String,
     val release_date: String,
-    val genre_ids:  ArrayList(),
+    val genre_ids:  ArrayList<Int>,
     val id: Int,
     val original_title: String,
     val original_language: String,
@@ -15,4 +15,4 @@ class Movie {
     val vote_count: Int,
     val video : Boolean,
     val vote_average :Double
-}
+)
