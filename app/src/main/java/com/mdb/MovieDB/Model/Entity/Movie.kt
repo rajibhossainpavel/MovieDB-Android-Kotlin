@@ -1,6 +1,6 @@
 package com.mdb.MovieDB.Model.Entity
 
-data class Movie {
+data class Movie(
     val poster_path: String?,
     val adult: Boolean,
     val overview: String,
@@ -15,4 +15,4 @@ data class Movie {
     val vote_count: Int,
     val video : Boolean,
     val vote_average :Double
-}
+)
