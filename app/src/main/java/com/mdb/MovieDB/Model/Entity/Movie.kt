@@ -1,8 +1,7 @@
 package com.mdb.MovieDB.Model.Entity
 
 class Movie {
-    val page: Int,
-    val poster_path: String?,
+   val poster_path: String?,
     val adult: Boolean,
     val overview: String,
     val release_date: String,
@@ -15,7 +14,5 @@ class Movie {
     val popularity : Double,
     val vote_count: Int,
     val video : Boolean,
-    val vote_average :Double,
-    val total_results: Int,
-    val total_pages: Int
+    val vote_average :Double
 }
