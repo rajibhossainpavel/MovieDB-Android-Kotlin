@@ -1,6 +1,6 @@
 package com.mdb.MovieDB.Model.Entity
 
-class Movie {
+data class Movie {
     val poster_path: String?,
     val adult: Boolean,
     val overview: String,
