@@ -10,7 +10,7 @@ import com.mdb.movieDB.local.entiity.MovieImage
 
 
 @Database(entities = [Movie::class, MovieDetail::class,  MovieImage::class], version = 1)
-    abstract class AppDatabase : RoomDatabase() {
+    abstract class MovieDatabase : RoomDatabase() {
         abstract fun MovieDao(): MovieDao
         abstract fun MovieDetailDao(): MovieDetailDao
         abstract fun MovieImageDao(): MovieImageDao
