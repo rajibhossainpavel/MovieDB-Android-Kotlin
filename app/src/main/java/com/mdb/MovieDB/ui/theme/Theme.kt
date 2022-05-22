@@ -1,4 +1,4 @@
-package com.mdb.MovieDB.ui.theme
+package com.mdb.movieDB.ui.theme
 
 import android.app.Activity
 import android.os.Build
