@@ -1,4 +1,4 @@
-package com.mdb.MovieDB.local.entiity
+package com.mdb.movieDB.local.entiity
 
 import androidx.room.Entity
 
