@@ -1,7 +1,8 @@
 package com.mdb.MovieDB.local.entiity
 //GET /movie/{movie_id}
-
-//QURERY
+//Authentication: API Key
+//PATH: movie_id
+//QURERY:
 //api_key
 //language
 //append_to_response
