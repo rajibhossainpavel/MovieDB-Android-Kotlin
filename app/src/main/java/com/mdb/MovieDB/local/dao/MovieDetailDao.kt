@@ -1,19 +1,21 @@
 package com.mdb.movieDB.local.dao
 
+import androidx.room.Dao
+
+@Dao
 interface MovieDetailDao {
-     @Query("SELECT * FROM movie_image")
+    @Query("SELECT * FROM movie_details")
     fun getAll(): List<MovieDetail>
 
-    @Query("SELECT * FROM user WHERE id IN (:Ids)")
-    fun loadAllByIds(userIds: IntArray): List<MovieDetail>
+    @Query("SELECT * FROM movie_details WHERE id IN (:Ids)")
+    fun loadAllByIds(Ids: IntArray): List<MovieDetail>
 
-    @Query("SELECT * FROM user WHERE first_name LIKE :first AND " +
-           "last_name LIKE :last LIMIT 1")
-    fun findByName(first: String, last: String): MovieDetail
+    @Query("SELECT * FROM movie_details WHERE parent_id id IN (:Ids)")
+    fun loadAllByParentIds(Ids: IntArray): List<MovieDetail>
 
     @Insert
-    fun insertAll(vararg movie_images: MovieDetail)
+    fun insertAll(movie_details: Array<MovieDetail>)
 
     @Delete
-    fun delete(movie_image: MovieDetail)
+    fun delete(movie_detail: MovieDetail)
 }
