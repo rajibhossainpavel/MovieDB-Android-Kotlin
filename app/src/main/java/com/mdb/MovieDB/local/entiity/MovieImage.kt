@@ -7,7 +7,7 @@ package com.mdb.MovieDB.local.entiity
 //language
 //include_image_language
 data class MovieImage(
-    id: Int,
+    val id: Int,
     val backdrops: ArrayList<BackDrop>,
     val posters: ArrayList<Poster>
 )
