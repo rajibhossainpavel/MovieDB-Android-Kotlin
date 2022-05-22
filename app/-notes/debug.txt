@@ -1,0 +1,11 @@
+1. CAN NOT INSTALL APP
+======================
+Install successfully finished in 9 s 848 ms.
+$ adb shell am start -n "com.mdb.MovieDB/com.mdb.MovieDB.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Error while executing: am start -n "com.mdb.MovieDB/com.mdb.MovieDB.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.mdb.MovieDB/.MainActivity }
+Error type 3
+Error: Activity class {com.mdb.MovieDB/com.mdb.MovieDB.MainActivity} does not exist.
+
+Error while Launching activity
+Failed to launch an application on all devices
