@@ -1,6 +1,7 @@
 package com.mdb.movieDB.local.entiity
 
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 //GET /movie/{movie_id}/images
 //Authentication: API Key
@@ -9,7 +10,7 @@ import androidx.room.Entity
 //api_key
 //language
 //include_image_language
-@EntitytableName = "movie_images", (primaryKeys = [("id")])
+@Entity(tableName = "movie_images", primaryKeys = [("id")])
 data class MovieImage(
     val id: Int,
     val parent_id: Int,
@@ -19,7 +20,7 @@ data class MovieImage(
 
 @Entity(primaryKeys = [("id")])
 data class BackDrop(
-    val id: Int,
+    @PrimaryKey(autoGenerate = true) val id: Int,
     val parent_id: Int,
     val aspect_ratio: Double,
     val file_path: String,
@@ -31,7 +32,7 @@ data class BackDrop(
 )
 @Entity(primaryKeys = [("id")])
 data class Poster(
-    val id: Int,
+    @PrimaryKey(autoGenerate = true) val id: Int,
     val parent_id: Int,
     val aspect_ratio: Double,
     val file_path: String,

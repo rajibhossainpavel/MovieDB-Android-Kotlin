@@ -1,6 +1,7 @@
 package com.mdb.movieDB.local.entiity
 
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 //GET /movie/{movie_id}
 //Authentication: API Key
@@ -41,14 +42,14 @@ data class MovieDetail(
 
 @Entity(primaryKeys = [("id")])
 data class Genre(
-    val id: Int,
+    @PrimaryKey(autoGenerate = true) val id: Int,
     val parent_id: Int,
     val name: String
 )
 
 @Entity(primaryKeys = [("id")])
 data class ProductionCompany(
-    val id: Int,
+    @PrimaryKey(autoGenerate = true) val id: Int,
     val parent_id: Int,
     val name: String,
     val logo_path: String?,
@@ -57,7 +58,7 @@ data class ProductionCompany(
 
 @Entity(primaryKeys = [("id")])
 data class ProductionCountry(
-    val id: Int,
+   @PrimaryKey(autoGenerate = true) val id: Int,
     val parent_id: Int,
     val iso_3166_1: String,
     val name: String
@@ -65,7 +66,7 @@ data class ProductionCountry(
 
 @Entity(primaryKeys = [("id")])
 data class SpokenLanguage(
-    val id: Int,
+    @PrimaryKey(autoGenerate = true) val id: Int,
     val parent_id: Int,
     val iso_639_1: String,
     val name: String

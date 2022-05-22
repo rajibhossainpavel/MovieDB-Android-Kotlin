@@ -1,6 +1,7 @@
 package com.mdb.movieDB.local.entiity
 
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 //GET /movie/top_rated
 //Authentication: API Key
@@ -11,7 +12,7 @@ import androidx.room.Entity
 //region----Specify a ISO 3166-1 code to filter release dates. Must be uppercase. pattern: ^[A-Z]{2}$
 @Entity(tableName = "network_requests", primaryKeys = [("id")])
 data class NetworkRequest(
-    val id: Int,
+    @PrimaryKey(autoGenerate = true) val id: Int,
     val method: String,
     val url: String?,
     val page: Int,
