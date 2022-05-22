@@ -1,6 +1,9 @@
 package com.mdb.movieDB.local.dao
 
 import androidx.room.Dao
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.Query
 import com.mdb.movieDB.local.entiity.NetworkRequest
 
 @Dao
