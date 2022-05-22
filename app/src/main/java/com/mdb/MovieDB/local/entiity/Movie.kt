@@ -16,3 +16,5 @@ data class Movie(
     val video : Boolean,
     val vote_average :Double
 )
+
+//https://stackoverflow.com/questions/57134347/ways-to-caching-online-data-fetched-through-retrofit-into-room-for-offline-acces
