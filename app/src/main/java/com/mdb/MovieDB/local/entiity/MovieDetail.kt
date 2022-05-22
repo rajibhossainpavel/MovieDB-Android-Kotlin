@@ -1,4 +1,7 @@
 package com.mdb.MovieDB.local.entiity
+
+import androidx.room.Entity
+
 //GET /movie/{movie_id}
 //Authentication: API Key
 //PATH: movie_id

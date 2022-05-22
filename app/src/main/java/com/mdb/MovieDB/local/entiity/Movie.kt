@@ -1,4 +1,7 @@
 package com.mdb.MovieDB.local.entiity
+
+import androidx.room.Entity
+
 //GET /movie/top_rated
 //Authentication: API Key
 //QURERY:
