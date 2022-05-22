@@ -11,6 +11,7 @@ import androidx.room.Entity
 //append_to_response
 @Entity(primaryKeys = [("id")])
 data class MovieDetail(
+    val id: Int,
     val parent_id: Int,
     val adult: Boolean?,
     val backdrop_path: String?,
@@ -18,7 +19,6 @@ data class MovieDetail(
     val budget: Int?,
     val genres:  ArrayList<Genre>,
     val homepage: String?,
-    val id: Int,
     val imdb_id:  String?, //minLength: 9 maxLength: 9 pattern: ^tt[0-9]{7}
     val original_language: String,
     val original_title: String,
@@ -41,22 +41,23 @@ data class MovieDetail(
 
 @Entity(primaryKeys = [("id")])
 data class Genre(
-    val parent_id: Int,
     val id: Int,
+    val parent_id: Int,
     val name: String
 )
 
 @Entity(primaryKeys = [("id")])
 data class ProductionCompany(
+    val id: Int,
     val parent_id: Int,
     val name: String,
-    val id: Int,
     val logo_path: String?,
     val origin_country: String
 )
 
 @Entity(primaryKeys = [("id")])
 data class ProductionCountry(
+    val id: Int,
     val parent_id: Int,
     val iso_3166_1: String,
     val name: String
@@ -64,6 +65,7 @@ data class ProductionCountry(
 
 @Entity(primaryKeys = [("id")])
 data class SpokenLanguage(
+    val id: Int,
     val parent_id: Int,
     val iso_639_1: String,
     val name: String

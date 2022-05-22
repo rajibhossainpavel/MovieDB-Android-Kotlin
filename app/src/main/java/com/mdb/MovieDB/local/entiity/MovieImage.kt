@@ -11,14 +11,15 @@ import androidx.room.Entity
 //include_image_language
 @Entity(primaryKeys = [("id")])
 data class MovieImage(
-    val parent_id: Int,
     val id: Int,
+    val parent_id: Int,
     val backdrops: ArrayList<BackDrop>,
     val posters: ArrayList<Poster>
 )
 
 @Entity(primaryKeys = [("id")])
 data class BackDrop(
+    val id: Int,
     val parent_id: Int,
     val aspect_ratio: Double,
     val file_path: String,
@@ -30,6 +31,7 @@ data class BackDrop(
 )
 @Entity(primaryKeys = [("id")])
 data class Poster(
+    val id: Int,
     val parent_id: Int,
     val aspect_ratio: Double,
     val file_path: String,
