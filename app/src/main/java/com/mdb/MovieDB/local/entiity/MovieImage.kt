@@ -6,13 +6,17 @@ package com.mdb.MovieDB.local.entiity
 //api_key
 //language
 //include_image_language
+@Entity(primaryKeys = [("id")])
 data class MovieImage(
+    val parent_id: Int,
     val id: Int,
     val backdrops: ArrayList<BackDrop>,
     val posters: ArrayList<Poster>
 )
 
+@Entity(primaryKeys = [("id")])
 data class BackDrop(
+    val parent_id: Int,
     val aspect_ratio: Double,
     val file_path: String,
     val height: Int,
@@ -21,8 +25,9 @@ data class BackDrop(
     val vote_count: Int,
     val width: Int
 )
-
+@Entity(primaryKeys = [("id")])
 data class Poster(
+    val parent_id: Int,
     val aspect_ratio: Double,
     val file_path: String,
     val height: Int,

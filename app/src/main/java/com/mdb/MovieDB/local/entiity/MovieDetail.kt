@@ -6,7 +6,9 @@ package com.mdb.MovieDB.local.entiity
 //api_key
 //language
 //append_to_response
+@Entity(primaryKeys = [("id")])
 data class MovieDetail(
+    val parent_id: Int,
     val adult: Boolean?,
     val backdrop_path: String?,
     val belongs_to_collection: Any?,
@@ -34,24 +36,32 @@ data class MovieDetail(
     val vote_count: Int
 )
 
+@Entity(primaryKeys = [("id")])
 data class Genre(
+    val parent_id: Int,
     val id: Int,
     val name: String
 )
 
+@Entity(primaryKeys = [("id")])
 data class ProductionCompany(
+    val parent_id: Int,
     val name: String,
     val id: Int,
     val logo_path: String?,
     val origin_country: String
 )
 
+@Entity(primaryKeys = [("id")])
 data class ProductionCountry(
+    val parent_id: Int,
     val iso_3166_1: String,
     val name: String
 )
 
+@Entity(primaryKeys = [("id")])
 data class SpokenLanguage(
+    val parent_id: Int,
     val iso_639_1: String,
     val name: String
 )
