@@ -31,20 +31,3 @@ data class Poster(
     val vote_count: Int,
     val width: Int
 )
-
-data class ProductionCompany(
-    val name: String,
-    val id: Int,
-    val logo_path: String?,
-    val origin_country: String
-)
-
-data class ProductionCountry(
-    val iso_3166_1: String,
-    val name: String
-)
-
-data class SpokenLanguage(
-    val iso_639_1: String,
-    val name: String
-)
