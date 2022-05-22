@@ -9,7 +9,7 @@ import androidx.room.Entity
 //language
 //page----Specify which page to query. minimum: 1 maximum: 1000 default: 1
 //region----Specify a ISO 3166-1 code to filter release dates. Must be uppercase. pattern: ^[A-Z]{2}$
-@Entity(primaryKeys = [("id")])
+@Entity(tableName = "movies", primaryKeys = [("id")])
 data class Movie(
     val id: Int,
     val poster_path: String?,

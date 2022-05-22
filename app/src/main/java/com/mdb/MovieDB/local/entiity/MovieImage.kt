@@ -9,7 +9,7 @@ import androidx.room.Entity
 //api_key
 //language
 //include_image_language
-@Entity(primaryKeys = [("id")])
+@EntitytableName = "movie_images", (primaryKeys = [("id")])
 data class MovieImage(
     val id: Int,
     val parent_id: Int,

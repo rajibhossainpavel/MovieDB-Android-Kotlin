@@ -9,7 +9,7 @@ import androidx.room.Entity
 //api_key
 //language
 //append_to_response
-@Entity(primaryKeys = [("id")])
+@Entity(tableName = "movie_details", primaryKeys = [("id")])
 data class MovieDetail(
     val id: Int,
     val parent_id: Int,
