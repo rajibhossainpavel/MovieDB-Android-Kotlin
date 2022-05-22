@@ -61,5 +61,8 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
     implementation 'io.ktor:ktor-client-core:2.0.1'
     implementation 'io.ktor:ktor-client-cio:2.0.1'
+    implementation "androidx.room:room-runtime:2.4.2"
+    annotationProcessor "androidx.room:room-compiler:2.4.2"
+     testImplementation "androidx.room:room-testing:2.4.2"
 
 }
