@@ -1,10 +1,11 @@
 package com.mdb.movieDB.local.dao
 
 import androidx.room.Dao
+import com.mdb.movieDB.local.entiity.Movie
 
 @Dao
 interface MovieDao {
-     @Query("SELECT * FROM movies")
+    @Query("SELECT * FROM movies")
     fun getAll(): List<Movie>
 
     @Query("SELECT * FROM movies WHERE id IN (:Ids)")

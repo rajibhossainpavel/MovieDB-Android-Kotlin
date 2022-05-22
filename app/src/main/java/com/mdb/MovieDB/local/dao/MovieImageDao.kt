@@ -1,6 +1,7 @@
 package com.mdb.movieDB.local.dao
 
 import androidx.room.Dao
+import com.mdb.movieDB.local.entiity.MovieImage
 
 @Dao
 interface MovieImageDao {
