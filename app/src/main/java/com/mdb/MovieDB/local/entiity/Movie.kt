@@ -1,4 +1,4 @@
-package com.mdb.MovieDB.Model.Entity
+package com.mdb.MovieDB.local.entiity
 
 data class Movie(
     val poster_path: String?,

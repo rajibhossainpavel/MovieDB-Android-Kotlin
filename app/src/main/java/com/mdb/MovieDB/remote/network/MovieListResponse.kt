@@ -1,6 +1,6 @@
-package com.mdb.MovieDB.Model.Network
+package com.mdb.MovieDB.remote.network
 
-import com.mdb.MovieDB.Model.Entity.Movie;
+import com.mdb.MovieDB.local.entiity.Movie;
 
 data class MovieListResponse(
     val page: Int,
